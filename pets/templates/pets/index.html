@@ -1,0 +1,32 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Pets</title>
+	<meta name="author" content="eyob tariku">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+<body>
+	<div class="container">
+		<header id="pageHeader">
+			<h1>Welcome To Your Pets Management App</h1>
+		</header>
+
+		<section>
+			<h4>To manage your pets, please <a href="{% url 'owners_admin:index' %}">login here.</a><br></h4>
+		</section>
+	</div>
+   
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
