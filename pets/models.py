@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 
 class Pet(models.Model):
-    kind = models.CharField(max_length=8, choices=[
+    kind = models.CharField('Pet Type', max_length=8, choices=[
         ('cat', 'Cat'),
         ('dog', 'Dog'),
     ])
